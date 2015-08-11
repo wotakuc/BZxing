@@ -5,3 +5,6 @@ private
 /.gradle
 /build
 /android/build
+/androidtest/build
+/core/build
+
