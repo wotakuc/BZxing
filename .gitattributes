@@ -1,17 +1,13 @@
-# Auto detect text files and perform LF normalization
+# Set the default behavior, in case people don't have core.autocrlf set.
 * text=auto
 
-# Custom for Visual Studio
-*.cs     diff=csharp
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.java text
 
-# Standard to msysgit
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
+# Declare files that will always have LF line endings on checkout.
+*.txt text eol=lf
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
